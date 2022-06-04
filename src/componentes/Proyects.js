@@ -1,19 +1,16 @@
 import React from 'react';
 import Navbar from './Navbar';
-import { motion } from 'framer-motion';
-
+import TitlePage from './TitlePage';
 
 const Proyects = () => {
     return (
-        <motion.div
-        animate={{  x:-100}}
-        transition={{ duration: 1 }}
-        className="root"
-        >
-            <Navbar/>
-            <h2>Proyectos</h2>
-
-        </motion.div>
+        <div className='root'>
+        <Navbar/>
+        <div className="proyects-container animate__animated animate__bounceInUp">
+            <TitlePage title={"Proyectos"}/>
+            
+        </div>
+</div>
 
     );
 }

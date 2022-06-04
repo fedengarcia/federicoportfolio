@@ -1,20 +1,10 @@
-.aboutme-root{
+
+.description-container{
+    background-color: green;
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    background-color: #FFEF82;
-
-
-
-    .description-container{
-        background-color: green;
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
+    flex-direction: column;
 }

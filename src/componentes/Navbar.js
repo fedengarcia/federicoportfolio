@@ -1,9 +1,17 @@
 import React from 'react';
-
+import { useNavigate } from 'react-router-dom';
 const Navbar = () => {
+    const navigate = useNavigate()
+
+    const handleNav = (route) => {
+        navigate(`/${route}`)
+    }
+
     return (
-        <div>
-            <h2>Navbar</h2>
+        <div className='navbar animate__animated animate__bounceInRight'>
+            <button onClick={() => handleNav("")}>Inicio</button>
+            <button onClick={() => handleNav("Aboutme")}>Sobre mi</button>
+            <button onClick={() => handleNav("Proyects")}>Proyectos</button>
         </div>
     );
 }
