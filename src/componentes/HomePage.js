@@ -11,7 +11,7 @@ const HomePage = () => {
     const navigate = useNavigate()
 
     const handleNav = (route) =>{
-        // navigate(`/${route}`)
+        navigate(`/${route}`)
     }
 
     const handleScreens = () => {
@@ -19,34 +19,31 @@ const HomePage = () => {
     }
 
     return (
-        <div className='navbar-root'>
-        <div className='background-navbar'>
+        <div className='homepage-root'>
+        <div className='home-container'>
             <img src={profilePicture} alt='foto de perfil'/>
-            <div className='nav'>
-                <div>
+            <div className='home'>
+            
+                <motion.button
+                animate={{  x:-100}}
+                transition={{ duration: 1 }}
+                onClick={() => handleNav("Aboutme")}
+                >Sobre mi
+                </motion.button>
 
-                    <motion.button
-                    animate={{  x:-100}}
-                    transition={{ duration: 1 }}
-                    onClick={() => handleNav("Aboutme")}
-                    >Sobre mi
-                    </motion.button>
+                <motion.button
+                animate={{  x:-100 }}
+                transition={{ duration: 1 }}
+                onClick={() => handleNav("Proyectos")}
+                >Ver proyectos
+                </motion.button>
 
-                    <motion.button
-                    animate={{  x:-100 }}
-                    transition={{ duration: 1 }}
-                    onClick={() => handleNav("Proyectos")}
-                    >Ver proyectos
-                    </motion.button>
-
-                    <motion.button
-                    animate={{  x:-100 }}
-                    transition={{ duration: 1 }}
-                    >Descargar CV
-                    </motion.button>
-
-                </div>
-                
+                <motion.button
+                animate={{  x:-100 }}
+                transition={{ duration: 1 }}
+                >Descargar CV
+                </motion.button>
+  
             </div>
         </div>
     </div>

@@ -1,14 +1,20 @@
 import React from 'react';
 import Navbar from './Navbar';
+import { motion } from 'framer-motion';
+
 
 const Proyects = () => {
     return (
-        
-        <div className='proyects-root'>
+        <motion.div
+        animate={{  x:-100}}
+        transition={{ duration: 1 }}
+        className="root"
+        >
             <Navbar/>
             <h2>Proyectos</h2>
 
-        </div>
+        </motion.div>
+
     );
 }
 
