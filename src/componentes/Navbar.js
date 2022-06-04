@@ -8,10 +8,11 @@ const Navbar = () => {
     }
 
     return (
-        <div className='navbar animate__animated animate__bounceInRight'>
+        <div className='navbar'>
             <button onClick={() => handleNav("")}>Inicio</button>
             <button onClick={() => handleNav("Aboutme")}>Sobre mi</button>
             <button onClick={() => handleNav("Proyects")}>Proyectos</button>
+            
         </div>
     );
 }

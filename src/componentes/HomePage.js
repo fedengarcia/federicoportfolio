@@ -1,6 +1,7 @@
 import React from 'react';
 import profilePicture from '../img/fotoperfil.png'
 import { useNavigate } from 'react-router-dom';
+import Navbar from './Navbar';
 
 const HomePage = () => {
 
@@ -12,7 +13,8 @@ const HomePage = () => {
 
     return (
         <div className='root'>
-        <div className='home-container animate__animated animate__bounceInUp'>
+        <Navbar/>
+        <div className='home-container'>
             <img src={profilePicture} alt='foto de perfil'/>
             <div className='home'>
                 <button onClick={() => handleNav("Aboutme")}>Sobre mi</button>

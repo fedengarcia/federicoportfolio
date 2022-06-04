@@ -1,6 +1,5 @@
 import React from 'react';
 import Navbar from './Navbar';
-import { motion } from 'framer-motion';
 import TitlePage from './TitlePage';
 const AboutMe = () => {
 
@@ -8,7 +7,7 @@ const AboutMe = () => {
     return (
         <div className='root'>
             <Navbar/>
-            <div className="description-container animate__animated animate__bounceInUp">
+            <div className="description-container ">
                 <TitlePage title={"Sobre mi"}/>
 
                 <h2>Federico Nicolas Garcia</h2>

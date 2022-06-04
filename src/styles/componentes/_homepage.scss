@@ -5,10 +5,10 @@
     justify-content: space-evenly;
     align-items: center;
     width: auto;
-    border-radius: 2em;
     width: 100%;
-    height: 100vh;
-    
+    height: 81.8vh;
+    overflow: hidden; /* Hide scrollbars */
+
     img{
         width: 20%;
         margin: 10em;
