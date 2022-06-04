@@ -14,10 +14,12 @@
         align-items: center;
         width: auto;
         border-radius: 2em;
+        width: 100%;
+        height: 100vh;
         
         img{
-            width: 50%;
-            margin: 1em;
+            width: 20%;
+            margin: 10em;
         }
         
         .home{
@@ -26,7 +28,7 @@
             flex-direction: column;
             padding: 6em;
             margin: 1em;
-            width: 100%;
+            width: 30%;
             
 
             button{

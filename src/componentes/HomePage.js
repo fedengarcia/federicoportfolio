@@ -20,30 +20,12 @@ const HomePage = () => {
 
     return (
         <div className='homepage-root'>
-        <div className='home-container'>
+        <div className='home-container animate__animated animate__bounceInUp'>
             <img src={profilePicture} alt='foto de perfil'/>
             <div className='home'>
-            
-                <motion.button
-                animate={{  x:-100}}
-                transition={{ duration: 1 }}
-                onClick={() => handleNav("Aboutme")}
-                >Sobre mi
-                </motion.button>
-
-                <motion.button
-                animate={{  x:-100 }}
-                transition={{ duration: 1 }}
-                onClick={() => handleNav("Proyectos")}
-                >Ver proyectos
-                </motion.button>
-
-                <motion.button
-                animate={{  x:-100 }}
-                transition={{ duration: 1 }}
-                >Descargar CV
-                </motion.button>
-  
+                <button onClick={() => handleNav("Aboutme")}>Sobre mi</button>
+                <button onClick={() => handleNav("Proyectos")}>Ver proyectos</button>
+                <button>Descargar CV</button>
             </div>
         </div>
     </div>
