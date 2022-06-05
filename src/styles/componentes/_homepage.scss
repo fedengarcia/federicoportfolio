@@ -1,42 +1,49 @@
 
 .home-container{
-    background-color: #EFD345;
+    background-color: #58b368;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
     width: auto;
     width: 100%;
-    height: 81.8vh;
+    height: 100vh;
     overflow: hidden; /* Hide scrollbars */
+    flex-direction: column;
 
-    img{
-        width: 20%;
-        margin: 10em;
-    }
-    
-    .home{
+
+    .home_nav{
+        margin-top: 3em;
+        width: 80%;
         display: flex;
-        justify-content: center;
-        flex-direction: column;
-        padding: 6em;
-        margin: 1em;
-        width: 30%;
-        
+        justify-content: space-around;
+        align-items: center;
 
-        button{
-            display: block;
-            background-color: #BABD42;
-            margin: 1vh;
-            font-size: 3vw;
-            cursor: pointer;
-            border-radius: 0.5em;
-            padding: 0.3em;
-            text-align: center;
+        .img_profile_container{
+            border-radius: 10em;
+            overflow: hidden;
+    
+            img{
+                width: 20vw;
+                height: 100%;
 
-            &:hover{
-                background-color: #82954B;
+                &:hover{
+                    cursor: pointer;
+
+                }
             }
+            
         }
+
+        .home{
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+           
+        }
+        
     }
+   
 }
 

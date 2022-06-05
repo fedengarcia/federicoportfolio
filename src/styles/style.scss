@@ -9,10 +9,31 @@
 .root{
     height: auto;
     width: 100%;
-    background-color: #FFEF82;
+    background-color: #58b368;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     
+}
+
+button{
+    display: block;
+    background-color: #dad873;
+    margin: 2vh;
+    font-size: 3vw;
+    cursor: pointer;
+    border-radius: 0.5em;
+    padding: 0.3em;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all 0.3s ease;
+    &:active{
+        transform: translateY(2px);
+        box-shadow: none;
+    }
+
+    &:hover{
+        background-color: #efeeb4;
+    }
 }

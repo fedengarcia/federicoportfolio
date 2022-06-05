@@ -1,9 +1,8 @@
 .proyects-container{
     width: 100%;
-    height: 100%;
-    background-color: rgb(210, 143, 143);
+    min-height: 81.8vh;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
