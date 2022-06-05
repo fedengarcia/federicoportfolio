@@ -18,13 +18,13 @@ const HomePage = () => {
         <div className='home-container'>
             <TitlePage title={"Federico Nicolas Garcia"}/>
             <div className='home_nav'>
-                <div className='img_profile_container'>
+                <div className='img_profile_container animate_animated animate__zoomIn'>
                     <img src={profilePicture} alt='foto de perfil'/>
                 </div>
                 <div className='home'>
-                    <button onClick={() => handleNav("Aboutme")}>Sobre mi</button>
-                    <button onClick={() => handleNav("Proyects")}>Ver proyectos</button>
-                    <button>Descargar CV</button>
+                    <button className='animate__animated animate__fadeInRight' onClick={() => handleNav("Aboutme")}>Sobre mi</button>
+                    <button className='animate__animated animate__fadeInRight' onClick={() => handleNav("Proyects")}>Ver proyectos</button>
+                    <button className='animate__animated animate__fadeInRight'>Descargar CV</button>
                 </div>
             </div>
             
