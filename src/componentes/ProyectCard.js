@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const ProyectCard = ({name,repo,urlDeploy}) => {
+const ProyectCard = ({name,repo,urlDeploy,urlDownload,description}) => {
     const navigate = useNavigate();
     
     const handleNav = (route) => {
@@ -15,10 +15,11 @@ const ProyectCard = ({name,repo,urlDeploy}) => {
 
             <h3>IMAGEN</h3>
 
+            <h4>{description}</h4>
             <div className='card-actions'>
-                <button onClick={() => handleNav(repo)}>Github</button>
-                <button onClick={() => handleNav(urlDeploy)}>Web Oficial</button>
-                <button onClick={() => handleNav("proyect.download")}>Descargar Repositorio</button>
+                <a href={repo}>Github</a>
+                <a href={urlDeploy}>Web Oficial</a>
+                <a download={urlDownload}>Descargar Repositorio</a>
             </div>
         </div>
     );

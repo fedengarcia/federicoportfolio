@@ -1,0 +1,17 @@
+@media (max-width:800px){
+    .proyects-container{
+        div{
+            grid-template-columns: repeat(2,auto);
+        }
+    }
+}
+
+
+
+@media (max-width:600px){
+    .proyects-container{
+        div{
+            grid-template-columns: repeat(1,auto);
+        }
+    }
+}
