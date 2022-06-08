@@ -22,7 +22,7 @@ const Proyects = () => {
         <div className='root'>
         <Navbar/>
         <div className="proyects-container">
-            <TitlePage title={"Proyectos"}/>
+            <TitlePage title={"PROYECTOS"}/>
             <div>
                 <ProyectCard name={"name"} repo={"proyect"} urlDeploy={"url"}/>
                 <ProyectCard name={"name"} repo={"proyect"} urlDeploy={"url"}/>

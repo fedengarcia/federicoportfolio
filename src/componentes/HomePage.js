@@ -3,6 +3,7 @@ import profilePicture from '../img/fotoperfil.png'
 import { useNavigate } from 'react-router-dom';
 import Navbar from './Navbar';
 import TitlePage from './TitlePage';
+import RedesSociales from './RedesSociales';
 
 const HomePage = () => {
 
@@ -22,12 +23,12 @@ const HomePage = () => {
                     <img src={profilePicture} alt='foto de perfil'/>
                 </div>
                 <div className='home'>
-                    <button className='animate__animated animate__fadeInRight' onClick={() => handleNav("Aboutme")}>Sobre mi</button>
-                    <button className='animate__animated animate__fadeInRight' onClick={() => handleNav("Proyects")}>Ver proyectos</button>
-                    <button className='animate__animated animate__fadeInRight' onClick="">Descargar CV</button>
+                    <button className='animate__animated animate__fadeInRight' onClick={() => handleNav("Aboutme")}>SOBRE MI</button>
+                    <button className='animate__animated animate__fadeInRight' onClick={() => handleNav("Proyects")}>PROYECTOS</button>
+                    <button className='animate__animated animate__fadeInRight' onClick="">DESCARGAR CV</button>
                 </div>
             </div>
-            
+            <RedesSociales/>
         </div>
         </div>
     );

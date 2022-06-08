@@ -8,10 +8,10 @@ const Navbar = () => {
     }
 
     return (
-        <div className='navbar'>
-            <button onClick={() => handleNav("")}>Inicio</button>
-            <button onClick={() => handleNav("Aboutme")}>Sobre mi</button>
-            <button onClick={() => handleNav("Proyects")}>Proyectos</button>
+        <div className='navbar '>
+            <button className='animate__animated animate__fadeInRight' onClick={() => handleNav("")}>INICIO</button>
+            <button className='animate__animated animate__fadeInRight' onClick={() => handleNav("Aboutme")}>SOBRE MI</button>
+            <button className='animate__animated animate__fadeInRight' onClick={() => handleNav("Proyects")}>PROYECTOS</button>
             
         </div>
     );
