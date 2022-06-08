@@ -50,8 +50,32 @@
             }
 
             .navabout{
-                button{
+                a{
                     width: 100%;
+                    display: block;
+                    background-color: #dad873;
+                    margin: 2vh;
+                    font-size: 3vw;
+                    cursor: pointer;
+                    border-radius: 0.5em;
+                    padding: 0.3em;
+                    text-align: center;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    transition: all 0.3s ease;
+                    text-decoration: none;
+                    
+                    &:visited {
+                        color: black;
+                      }
+
+                    &:active{
+                        transform: translateY(2px);
+                        box-shadow: none;
+                    }
+                
+                    &:hover{
+                        background-color: #efeeb4;
+                    }
                 }
             }
 
@@ -71,7 +95,9 @@
 
         .about-section{
             margin-top: 2em;
+
             padding: 2em;
+            
             h2{
                 font-size: 6vw;
                 margin-bottom: 0.5em;
@@ -81,8 +107,42 @@
                 align-items: flex-start;
                 justify-content: center;
                 flex-direction: column;
+
                 li{
+                    list-style: none;
                     margin: 1em;
+                    font-size: 1.4vw;
+                    font-weight: bold;
+                }
+            }
+
+
+            .title-section{
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                width: 100%;
+        
+                .title1{
+                    position:absolute;
+                    z-index: 1;
+                    font-size: 5vw;
+                    margin: 0;
+                    color: black;
+                }
+                .title2{
+                    animation-duration: 0.5s;
+                    z-index: 0;
+                    color: white;
+                    opacity: 0.2;
+                    font-size: 10vw;
+                    margin: 0;
+                  
+                    @media (max-width: 500px) {
+                      font-size: 20px;
+                    }
+            
                 }
             }
         }   
