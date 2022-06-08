@@ -21,10 +21,17 @@ const Proyects = () => {
     return (
         <div className='root'>
         <Navbar/>
-
         <div className="proyects-container">
             <TitlePage title={"Proyectos"}/>
-            <ProyectCard name={"name"} repo={"proyect"} urlDeploy={"url"}/>
+            <div>
+                <ProyectCard name={"name"} repo={"proyect"} urlDeploy={"url"}/>
+                <ProyectCard name={"name"} repo={"proyect"} urlDeploy={"url"}/>
+                <ProyectCard name={"name"} repo={"proyect"} urlDeploy={"url"}/>
+                <ProyectCard name={"name"} repo={"proyect"} urlDeploy={"url"}/>
+                <ProyectCard name={"name"} repo={"proyect"} urlDeploy={"url"}/>
+                <ProyectCard name={"name"} repo={"proyect"} urlDeploy={"url"}/>
+
+            </div>
             
         </div>
 </div>

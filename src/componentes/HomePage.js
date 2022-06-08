@@ -24,12 +24,12 @@ const HomePage = () => {
                 <div className='home'>
                     <button className='animate__animated animate__fadeInRight' onClick={() => handleNav("Aboutme")}>Sobre mi</button>
                     <button className='animate__animated animate__fadeInRight' onClick={() => handleNav("Proyects")}>Ver proyectos</button>
-                    <button className='animate__animated animate__fadeInRight'>Descargar CV</button>
+                    <button className='animate__animated animate__fadeInRight' onClick="">Descargar CV</button>
                 </div>
             </div>
             
         </div>
-    </div>
+        </div>
     );
 }
 
